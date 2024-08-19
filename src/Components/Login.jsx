@@ -1,6 +1,6 @@
 import  axios  from 'axios';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -51,7 +51,7 @@ const Login = () => {
                 <input className="form-control" type="password"  name="password" value={password} onChange={(e)=> setPassword(e.target.value)} required/>
             </div>
             <div className="mt-5">
-                <a href="/resetpassword">forgot Password?</a>
+                <Link to="/resetpassword">forgot Password?</Link>
               </div>
             <div className="d-flex justify-content-evenly mt-5">
               
