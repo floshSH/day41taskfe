@@ -21,7 +21,7 @@ const Login = () => {
     }
     const loginUser=async()=>{
       try {
-        const response=await axios.post("http://localhost:5000/user/login",{email,password});
+        const response=await axios.post("https://day41taskbe-1.onrender.com/user/login",{email,password});
         if(response.data.message === "Login successful"){
           navigate("/Home");
         }
