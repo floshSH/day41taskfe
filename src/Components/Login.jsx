@@ -57,7 +57,7 @@ const Login = () => {
               
             <div><button className='btn btn-primary' type='submit'>Submit</button>
             </div>
-            <div><button className="btn btn-primary" onClick={handleClick}>Register</button></div>
+            <div><button className="btn btn-primary" type='button' onClick={handleClick}>Register</button></div>
        
             </div>
         </form>
